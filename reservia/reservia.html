@@ -10,7 +10,7 @@
     <body>
         <header>
             <div id="header">
-                <p><img src="Reservia.svg" class="reservialogo" alt="logo"/></p>
+                <p><img src="logos/Reservia.svg" class="reservialogo" alt="logo"/></p>
 
                 <nav>
                     <ul>
@@ -27,65 +27,89 @@
                     <p>En plein centre ville ou en pleine nature</p>
                     
                     <div id="trouvez">
-                    <p><img src="pin.png" class="figurine" alt="pinlogo"/>
-                    </p>
-                    <p>
-                        <form method="post" action="traitement.php">
+                        <div id="trouvezgauche">
+                            <p><img src="logos/pin.png" class="figurine" alt="pinlogo"/></p>
+                        </div>
+                        <div id="trouvezcentre">
                             <p>
-                            <label for="ville">
+                                <form method="post" action="traitement.php">
+                                    <label for="ville"></label><input type="text" name="ville" id="ville"/>
+                                </form>
                             </p>
-                            <p><input type="texte" name="ville" id="ville" />Rechercher</p>
-                        </form>
-                    </p>
+                        </div>
+                        <div id="trouvezdroite">
+                            <p>Rechercher</p>
+                        </div>     
                     </div>  
                     <div id="filtres">
                         <p>Filtres</p>
-                        <p><img src="money.png" class="figurine" alt="moneylogo"/>Economique</p>
-                        <p><img src="children.png" class="figurine" alt="childrenlogo"/>Familial</p>
-                        <p><img src="heart.png" class="figurine" alt="heartlogo"/>Romantique</p>
-                        <p><img src="dog.png" class="figurine" alt="doglogo"/>Animaux Autorisés</p>
+                            <div class="bordurefiltre">
+                                <div id="eco">  
+                                    <p><img src="logos/money.png" class="figurine" alt="moneylogo"/></p>
+                                </div>
+                                    <p>Economique</p>
+                            </div>
+                            <div class="bordurefiltre">
+                                <div id="familial">
+                                    <p><img src="logos/children.png" class="figurine" alt="childrenlogo"/></p>
+                                </div>
+                                    <p>Familial</p>
+                            </div>
+                            <div class="bordurefiltre">
+                                <div id="romantique">
+                                    <p><img src="logos/heart.png" class="figurine" alt="heartlogo"/></p>
+                                </div>
+                                    <P>Romantique</P>
+                            </div>
+                            <div class="bordurefiltre">
+                                <div id="animaux">
+                                    <p><img src="logos/dog.png" class="figurine" alt="doglogo"/></p>
+                                </div>
+                                    <P>Animaux autorisés</P>
+                            </div>
                     </div>
-                        <p><img src="info.png" class="figurine" alt="infologo">Plus de 500 logements sont disponibles dans cette ville</p>
+                        <p><img src="logos/info.png" class="figurine" alt="infologo">Plus de 500 logements sont disponibles dans cette ville</p>
             </header>
             <aside>
                 
                 <div id="populaires">
-                        <div id="populaireshaut"><h1>Les plus populaires</h1>
-                        <p><img src="fleche.png" class="figurine" alt="flechelogo"/></p>
+                        <div id="populaireshaut">
+                            <img src="logos/fleche.png" id="fleche" alt="flechelogo"/>
+                            <h1>Les plus populaires</h1>
                         </div>
                             <div class="pop">
                                 <div id="hotelpop1"></div>
-                                <div class="hotel_description"><a href="Hôtellesoleildumatin.html">Hôtel le soleil du matin</a><br />
+                                <div class="hotel_description"><a href="Hôtellesoleildumatin.html"><strong>Hôtel le soleil du matin</strong></a><br />
                                 Nuit à partir de 128€<br />
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                </div>  
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                </div>
                             </div>
                             <div class="pop">
                                 <div id="hotelpop2"></div>
-                                <div class="hotel_description"><a href="Aucoeurdeleau.html">Au coeur de l'eau</a><br />
+                                <div class="hotel_description"><a href="Aucoeurdeleau.html"><strong>Au coeur de l'eau</strong></a><br />
                                 Chambres d'hôtes<br />
                                 Nuit à partir de 71€<br />
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="starclair.png" class="figurine" alt="starclairlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/starclair.png" class="figurine" alt="starclairlogo"/>
                                 </div>  
                             </div>
                             <div class="pop">
                                 <div id="hotelpop3"></div>
-                                <div class="hotel_description"><a href="Hôteltoutbleuetblanc.html">Hôtel Tout bleu et Blanc</a><br />
+                                <div class="hotel_description"><a href="Hôteltoutbleuetblanc.html"><strong>Hôtel Tout bleu et Blanc</strong></a><br />
                                 Nuit à partir de 68€<br />
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="star.png" class="figurine" alt="starlogo"/>
-                                <img src="starclair.png" class="figurine" alt="starclairlogo"/>
-                                </div>  
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                                <img src="logos/starclair.png" class="figurine" alt="starclairlogo"/>
+                                </div>
                             </div>
                 </div>
             </aside>
@@ -95,71 +119,71 @@
                     <div class="undersection">
                         <div class="hotels"><a href="AubergeLaCannebière.html">
                             <div id="hotel1"></div>
-                            <div class="hotel_description"><a href="AubergeLaCannebière.html">Auberge La cannebière</a><br />
+                            <div class="hotel_description"><a href="AubergeLaCannebière.html"><strong>Auberge La cannebière</strong></a><br />
                             Nuit à partir de 25€<br />
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="starclair.png" class="figurine" alt="starclairlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/starclair.png" class="figurine" alt="starclairlogo"/>
                             </div></a>
                         </div>
-                        <div class="hotels">
+                        <div class="hotels"><a href="Hôtelduport.html">
                             <div id="hotel2"></div>
-                            <div class="hotel_description"><a href="Hôtelduport.html">Hôtel du Port</a><br />
+                            <div class="hotel_description"><a href="Hôtelduport.html"><strong>Hôtel du Port</strong></a><br />
                             Nuit à partir de 52€<br />
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            </div>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            </div></a>
                         </div>
-                        <div class="hotels">
+                        <div class="hotels"><a href="Hôtellesmouettes.html">
                             <div id="hotel3"></div>
-                            <div class="hotel_description"><a href="Hôtellesmouettes.html">Hôtel Les Mouettes</a><br />
+                            <div class="hotel_description"><a href="Hôtellesmouettes.html"><strong>Hôtel Les Mouettes</strong></a><br />
                             Nuit à partir de 76€<br />
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="starclair.png" class="figurine" alt="starclairlogo"/>
-                            </div>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/starclair.png" class="figurine" alt="starclairlogo"/>
+                            </div></a>
                         </div>
                     </div>
                     <div class="undersection">
-                        <div class="hotels">
+                        <div class="hotels"><a href="Hôteldelamer.html">
                             <div id="hotel4"></div>
-                            <div class="hotel_description"><a href="Hôteldelamer.html">Hôtel de la mer</a><br />
+                            <div class="hotel_description"><a href="Hôteldelamer.html"><strong>Hôtel de la mer</strong></a><br />
                             Nuit à partir de 46€<br />
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="starclair.png" class="figurine" alt="starclairlogo"/>
-                            <img src="starclair.png" class="figurine" alt="starclairlogo"/>
-                            </div>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/starclair.png" class="figurine" alt="starclairlogo"/>
+                            <img src="logos/starclair.png" class="figurine" alt="starclairlogo"/>
+                            </div></a>
                         </div>
-                        <div class="hotels">
+                        <div class="hotels"><a href="Aubergelepanier.html">
                             <div id="hotel5"></div>
-                            <div class="hotel_description"><a href="Aubergelepanier.html">Auberge le Panier</a><br />
+                            <div class="hotel_description"><a href="Aubergelepanier.html"><strong>Auberge le Panier</strong></a><br />
                             Nuit à partir de 23€<br />
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="starclair.png" class="figurine" alt="starclairlogo"/>
-                            </div>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/starclair.png" class="figurine" alt="starclairlogo"/>
+                            </div></a>
                         </div>
-                        <div class="hotels">
+                        <div class="hotels"><a href="Hôtelchezamina.html">
                             <div id="hotel6"></div>
-                            <div class="hotel_description"><a href="Hôtelchezamina.html">Hôtel chez Amina</a><br />
+                            <div class="hotel_description"><a href="Hôtelchezamina.html"><strong>Hôtel chez Amina</strong></a><br />
                             Nuit à partir de 96€<br />
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            <img src="star.png" class="figurine" alt="starlogo"/>
-                            </div>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            <img src="logos/star.png" class="figurine" alt="starlogo"/>
+                            </div></a>
                         </div>
                     </div>
 
@@ -168,39 +192,39 @@
 
                 <h1 id="Activités">Activités à Marseille</h1>
                     <div id="section2">
-                            <div class="actis">
+                            <div class="actis"><a href="leVieuxPort.html">
                                 <div id="acti1"></div>
-                                <div class="acti_description"><a href="leVieuxPort.html">Vieux Port</a></div>
-                            </div>
+                                <div class="acti_description">Vieux Port</div></a>
+                            </div>  
                             
                         <div class="section2colonne">
-                            <div class="actis">
+                            <div class="actis"><a href="FortdePomègues.html">
                                 <div id="acti2"></div>
-                                <div class="acti_description"><a href="FortdePomègues.html">Fort de Pomègues</a></div>
-                            </div>
+                                <div class="acti_description">Fort de Pomègues</div>
+                            </div></a>
 
-                            <div class="actis">
+                            <div class="actis"><a href="IlesduFrioul.html">
                                 <div id="acti3"></div>
-                                <div class="acti_description"><a href="IlesduFrioul.html">Iles du Frioul</a></div>
-                            </div>
+                                <div class="acti_description">Iles du Frioul</div>
+                            </div></a>
                         </div>
 
                         
-                            <div class="actis">
+                            <div class="actis"><a href="ParcNationaldesCalanques.html">
                                 <div id="acti4"></div>
-                                <div class="acti_description"><a href="ParcNationaldesCalanques.html">Parc National des Calanques</a></div>
-                            </div>
+                                <div class="acti_description">Parc National des Calanques</div>
+                            </div></a>
                         
                         <div class="section2colonne">
-                            <div class="actis">
+                            <div class="actis"><a href="NotreDamedelaGarde.html">
                                 <div id="acti5"></div>
-                                <div class="acti_description"><a href="NotreDamedelaGarde.html">Notre-Dame-de-la-Garde</a></div>
-                            </div>
+                                <div class="acti_description">Notre-Dame-de-la-Garde</div>
+                            </div></a>
 
-                            <div class="actis">
+                            <div class="actis"><a href="ParcLongchamps.html">
                                 <div id="acti6"></div>
-                                <div class="acti_description"><a href="ParcLongchamps.html">Parc Longchamps</a></div>
-                            </div>
+                                <div class="acti_description">Parc Longchamps</div>
+                            </div></a>
                         </div>
                     </div>               
         </section>
