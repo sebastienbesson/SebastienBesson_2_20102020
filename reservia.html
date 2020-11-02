@@ -13,10 +13,21 @@
             <div id="header">
                 <img src="logos/Reservia.svg" id="reservialogo" alt="logo"/>
                 <nav>
-                    <div><a href="#Hébergements">Hébergements</a></div>
-                    <div><a href="#Activités">Activités</a></div>
-                    <span id="headright">S'Inscrire</span>
-                </nav>   
+                    <div><a href="#hebergements">Hébergements</a></div>
+                    <div><a href="#activites">Activités</a></div>
+                    <span id="headright">S'Inscrire</span> 
+                </nav>  
+            </div>
+            <div id="headermin">
+                <img src="logos/Reservia.svg" id="reservialogo" alt="logo"/>
+                <span id="headright">S'Inscrire</span>
+            </div>
+                <nav>
+                    <div id="navmin">
+                        <div><a href="#hebergements">Hébergements</a></div>
+                        <div><a href="#activites">Activités</a></div>
+                    </div>
+                </nav>  
             </div>
         </header>
         <section>
@@ -38,7 +49,7 @@
                             <p><input type="button" name="rechercher" value="Rechercher" id="rechercher"/></p>
                         </div>
                         <div id="trouvezdroitecourt">
-                            <p><input type="button" name="rechercher" class="fas fa-search"/></p>
+                            <p><input type="image" name="rechercher" src="logos/search.png" class="search"/></p>
                         </div>
                     </div>  
                     <div id="filtres">
@@ -68,7 +79,7 @@
                                     <p>Animaux autorisés</p>
                             </div>
                     </div>
-                        <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                        <div id=info><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
             </header>
             <aside>    
                 <div id="populaires">
@@ -77,21 +88,22 @@
                             <h1>Les plus populaires</h1>
                         </div>
                             <div class="pop">
-                                <a href="Hôtellesoleildumatin.html">      
+                                <a href="Hôtellesoleildumatin.html">
                                     <div class="hotelpop_description">
                                         <span class="hotelpoptext1">Hôtel le soleil du matin</span><br />
                                         <span class="hotelpoptext2">Nuit à partir de 128€</span><br />
-                                        <div class="stars">
+                                        <span class="stars">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        </div>
+                                        </span>
                                     </div>
                                     <div id="hotelpop1"></div>
+                                    </div>
                                 </a>
-                            </div>
+                            
                             <div class="pop">
                                 <a href="Aucoeurdeleau.html">    
                                     <div class="hotelpop_description">
@@ -102,7 +114,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
+                                            <span class="whitestar"><i class="fas fa-star"></i></span>
                                         </div>
                                     </div>
                                     <div id="hotelpop2"></div>
@@ -111,14 +123,14 @@
                             <div class="pop">
                                 <a href="Hôteltoutbleuetblanc.html">
                                     <div class="hotelpop_description">
-                                        <span class="hoteltext1">Hôtel Tout bleu et Blanc</span><br />
-                                        <span class="hoteltext2">Nuit à partir de 68€</span><br />
+                                        <span class="hotelpoptext1">Hôtel Tout bleu et Blanc</span><br />
+                                        <span class="hotelpoptext2">Nuit à partir de 68€</span><br />
                                         <div class="stars">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
+                                            <span class="whitestar"><i class="fas fa-star"></i></span>
                                         </div>
                                     </div>
                                     <div id="hotelpop3"></div>
@@ -127,7 +139,7 @@
                 </div>
             </aside>
             <div id=section1>
-                <h1 id="Hébergements">Hébergements à Marseille</h1>
+                <h1 id="hebergements">Hébergements à Marseille</h1>
                     <div class="undersection">
                         <div class="hotels">
                             <a href="AubergeLaCannebière.html">
@@ -139,7 +151,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <span class="whitestar"><i class="fas fa-star"></i></span>
                                 </div>
                             </a>
                         </div>
@@ -167,7 +179,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <span class="whitestar"><i class="fas fa-star"></i></span>
                                 </div>
                             </a>
                         </div>
@@ -182,8 +194,8 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <span class="whitestar"><i class="fas fa-star"></i></span>
+                                    <span class="whitestar"><i class="fas fa-star"></i></span>
                                 </div>
                             </a>
                         </div>
@@ -197,7 +209,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <span class="whitestar"><i class="fas fa-star"></i></span>
                                 </div>
                             </a>
                         </div>
@@ -218,7 +230,7 @@
                     </div>
                 <p><span class="gras">Afficher plus</span></p>
             </div>
-                <h1 id="Activités">Activités à Marseille</h1>
+                <h1 id="activites">Activités à Marseille</h1>
                     <div id="section2">
                             <div class="actis">
                                 <a href="leVieuxPort.html">

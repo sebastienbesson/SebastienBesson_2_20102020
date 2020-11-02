@@ -6,21 +6,28 @@ body{
     font-family: 'Raleway', Helvetica, sans-serif;
 }
 
-#header {
+#header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: right;
     padding: 20px;
+}
+#headermin{
+    display: none;
 }
 
 #reservialogo{
     float: left;
 }
-nav {
+nav{
     display: flex;
     width: 33%;
     justify-content: space-between;
     padding: 20px;
+}
+#navmin{
+    display: none;
 }
 
 nav a{
@@ -32,12 +39,12 @@ nav a:hover{
     border-top: 2px #0065fc solid;
     color: #0065fc;
     padding-top: 16px;
-
 }
 
 #headright{
     color: #0065fc;
     font-weight: bold;
+    margin-left: 0px;
 }
 
 section{
@@ -46,16 +53,13 @@ section{
 
 .figurine{
     height: 20px;
-    width: 20px;  
+    width: 20px;
 }
+
 #trouvez{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
-}
-#pin{
-    height: 20px;
-    width: 25px;
 }
 
 #trouvezgauche{
@@ -89,6 +93,7 @@ section{
     color: white;
 }
 #trouvezdroitecourt{
+    display: none;
     border: #0065fc;
     background-color: #0065fc;
     border-radius: 0px 20px 20px 0px;
@@ -97,11 +102,13 @@ section{
     padding-left: 15px;
     padding-right: 15px;
 }
-.fas_fa-search{
+.search{
     font-size: 1.2em;
     font-weight: bold;
     color: white;
-    background-image: url("fas fa-search");
+    height: 25px;
+    width: 35px;
+
 }
 
 #filtres{
@@ -156,11 +163,17 @@ section{
     padding-right: 20px;
 }
 
-.infologo{
+#info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#info i{
     height: 20px;
     width: 20px;
+    text-align: center;
     border: 2px #F2F2F2 solid;
     border-radius: 50%;
+    color: #0065fc;
 }
 #populaires{
     background-color: #F2F2F2;
@@ -184,7 +197,6 @@ section{
     width: 20px;
 }
 .pop{
-    flex-direction: row;
     background-color: white;
     border-radius: 20px;
     margin: 5px;  
@@ -194,29 +206,26 @@ section{
 
 .hotelpop_description{
     float: right;
+    display: flex;
+    flex-direction: column;
     font-size: 1.1em;
+    height: 100%;
 }
- .hotelpop_description i{
-     margin-bottom: 0%;
- }
+
 #hotelpop1{
     background: url('photos/hotellesoleildumatin.jpg') no-repeat;
     border-radius: 20px 0 0 20px;
-    width: 50%;
     height: 150px;
-    float: left;
 }
 
 #hotelpop2{
     background: url('photos/aucoeurdeleau.jpg') no-repeat;
     border-radius: 20px 0 0 20px;
-    width: 50%;
     height: 150px;
 }
 #hotelpop3{
     background: url('photos/hoteltoutbleuettoutblanc.jpg') no-repeat;
     border-radius: 20px 0 0 20px;
-    width: 50%;
     height: 150px;
 }
 
@@ -232,7 +241,13 @@ section{
     color: black;
     text-decoration: none;
 }
+.stars{
+    margin-top: 20%;
+}
 
+.whitestar{
+    color: rgb(212, 200, 200);
+}
 
 #section1{
     background-color: #F2F2F2;
@@ -240,6 +255,7 @@ section{
     width: 60%;
     padding: 15px 10px 10px 10px;
     justify-content: space-around;
+
 }
 .undersection{
     display: flex;
@@ -272,8 +288,8 @@ section{
     border-radius: 20px 20px 0 0;
 }
 #hotel4{
-    background: url('photos/HOTELMAX4.jpg') no-repeat;
-
+    background: url('photos/hoteldelamer.jpg') no-repeat;
+    height: 140px;
     border-radius: 20px 20px 0 0;
 }
 #hotel5{
@@ -304,7 +320,6 @@ section{
     color: black;
     text-decoration: none;
 }
-
 .gras{
     font-weight: bold;
     padding-bottom: 15px;
@@ -391,17 +406,76 @@ footer ul{
 footer li{
     margin-left: 0;
 }
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 767px)
 {
     body{
         width: auto;
         margin: auto;
     }
 
-    section{
+    #header{
+        display: none;
+    }
+
+    #headermin{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100%;
+        padding: 5px;
+        }
+    #reservialogo{
+        float: left;
+        margin-left: 10px;
+        }
+        
+    #headright{
+        float: right;
+        margin-right: 10px;
+        margin-top: 15px;
+        }
+    nav{
+        width: 100%;
+    }
+    nav a{
+        color: black;
+        text-decoration: none; 
+    }
+    
+    nav a:hover{
+        border-top: 2px #0065fc solid;
+        color: #0065fc;
+        padding-bottom: 16px;
+    }
+    #navmin{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+        width: 100%;
+        padding: 15px;
+    }
+   
+    #trouvezdroite{
+        display: none;
+        border: #0065fc;
+        background-color: #0065fc;
+        border-radius: 0px 20px 20px 0px;
+        text-align: justify;
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #trouvezdroitecourt{
+        display: flex;
+        border: #0065fc;
+        background-color: #0065fc;
+        border-radius: 0px 20px 20px 0px;
+        text-align: justify;
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #filtres{
@@ -426,14 +500,30 @@ footer li{
         padding: 10px;
         margin-bottom: 10px;
     }
-    #hotelpop1{
-        float: left;
+    .hotelpop_description{
+        font-size: 0.7em;
     }
+    .hotelpoptext1{
+        max-width: 100%;
+    }
+    .stars{
+        margin-top: 60%;
+    }
+    #hotelpop1{
+        max-width: 50%;
+    }
+    #hotelpop2{
+        max-width: 50%;
+    }
+    #hotelpop3{
+        max-width: 48%;
+    }
+    
     #section1{
         background-color: white;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         padding: 10px;
     
     }
@@ -532,60 +622,227 @@ footer li{
 
     footer{
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
 }
-@media all and (min-device-width: 481px) and (max-device-width: 1024px)
+@media all and (min-device-width: 768px) and (max-device-width: 1023px)
 {
+    #header{
+        width: 100%;
+    }
     nav{
-        justify-content: space-around;
+        margin-right: 10%;
+    }
+    nav a{
+        padding-right: 10px;
+    }
+
+    #filtres{
+        font-size: 0.9em;
+    }
+
+    aside{
+        padding: 10px;
     }
     #populaires{
-        width: 100%;
+        width: 80%;
+        justify-content: center;
+        float: none;
+        margin-bottom: 15px;
+        padding-left: 15%;
+    }
+    .pop{
+        width: 70%;
     }
 
     #section1{
-        width: 100%;
+        width: 90%;
+        margin: 10px;
+    }
+    #hebergements{
+        padding-left: 10px;
     }
     #section2{
         flex-wrap: wrap;
         width: auto;
-
+    }
+    #activites{
+        padding-left: 20px;
     }
     .actis{
         width: auto;
     }
 }
 
-@media all and (min-device-width: 1919px) 
+@media all and (min-device-width: 1024px) and (max-device-width: 1024px)
 {
-#hotel1{
-    background: url('photos/HOTEL1.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
+    #filtres{
+        width: auto;
+    }
+    
+    #populaires{
+        width: 33%;
+        float: right;
+        padding-bottom: 30px;
+    }
+    .hotelpoptext1{
+        font-size: 0.6em;
+    }
+
+    .hotelpoptext2{
+        font-size: 0.6em;
+    }
+
+    .stars{
+        margin-top: 40%;
+    }
+
+    #section1{
+        width: 60%;
+        margin: 10px;
+    }
+    #hebergements{
+        padding-left: 10px;
+    }
+
+    .hoteltext1{
+        font-size: 0.9em;
+    }
+    #section2{
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+    }
+    #activites{
+        padding-left: 20px;
+    }
+    .actis{
+        width: 200px;
+        margin: 15px;
+    }
+    #acti1{
+        width: 100%;
+    }
+    #acti2{
+        width: 100%;
+    }
+    #acti3{
+        width: 100%;
+    }
+    #acti4{
+        width: 100%;
+    }
+    #acti5{
+        width: 100%;
+    }
+    #acti6{
+        width: 100%;
+    }
+    .acti_description{
+        width: auto;
+        font-size: 0.8em;
+    }
+
 }
 
-#hotel2{
-    background: url('photos/HOTEL2.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-}
+@media all and (min-device-width: 2560px)
+{
+    header{
+    margin: 60px 60px 0px 60px;
+    }
 
-#hotel3{
-    background: url('photos/HOTEL3.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-}
+    #reservialogo{
+        height: 250px;
+        width: 250px;
+    }
+    nav{
+    font-size: 2em;
+    padding-top: 80px;
+    }
 
-#hotel4{
-    background: url('photos/HOTEL4.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-}
+    #filtres{
+        width: 80%;
+        font-size: 1.1em;
+    }
+    section{
+        margin: 0px 60px 60px 60px;
+    }
 
-#hotel5{
-    background: url('photos/HOTEL5.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-}
+    section header{
+        font-size: 1.5em;
+    }
 
-#hotel6{
-    background: url('photos/HOTEL6.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-}
+    section a{
+        font-size: 1.2em;
+    }
+    #populaires{
+        width: 20%;
+        padding: 25px 15px 25px 15px;
+    }
+    .pop{
+        margin-bottom: 55px;
+    }
+    .stars{
+        margin-top: 5%;
+    }
+    #section1{
+        padding: 25px 20px 20px 20px;
+    }
+    #hebergements{
+        margin-left: 5%;
+    }
+    .undersection{
+        margin: 10px;
+    }
+    .hotels{
+        width: 25%;
+        margin: 35px;
+    }
+
+    #hotel1{
+        background: url('photos/HOTEL1.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #hotel2{
+        background: url('photos/HOTEL2.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #hotel3{
+        background: url('photos/HOTEL3.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #hotel4{
+        background: url('photos/HOTEL4.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #hotel5{
+        background: url('photos/HOTEL5.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #hotel6{
+        background: url('photos/HOTEL6.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+    #activites{
+        margin-left: 11%;
+        font-size: 1.5em;
+    }
+    #section2{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    footer{
+        padding: 40px;
+        font-size: 1.5em;
+    }
 }
