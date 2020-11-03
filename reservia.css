@@ -41,7 +41,7 @@ nav a:hover{
     padding-top: 16px;
 }
 
-#headright{
+#headerright{
     color: #0065fc;
     font-weight: bold;
     margin-left: 0px;
@@ -51,32 +51,27 @@ section{
     padding: 20px;
 }
 
-.figurine{
-    height: 20px;
-    width: 20px;
-}
-
-#trouvez{
+#find{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
 }
 
-#trouvezgauche{
+#findleft{
     background-color: #F2F2F2;
     border-radius: 20px 0px 0px 20px;
     width: 35px;
     text-align: center;
 }
-#trouvezcentre{
+#findcenter{
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid;
 }
 
-#ville{
+#city{
     border: white;
 }
-#trouvezdroite{
+#findright{
     border: #0065fc;
     background-color: #0065fc;
     border-radius: 0px 20px 20px 0px;
@@ -85,14 +80,14 @@ section{
     padding-left: 15px;
     padding-right: 15px;
 }
-#rechercher{
+#searching{
     border: #0065fc;
     background-color: #0065fc;
     font-size: 1.2em;
     font-weight: bold;
     color: white;
 }
-#trouvezdroitecourt{
+#findrightmin{
     display: none;
     border: #0065fc;
     background-color: #0065fc;
@@ -102,26 +97,25 @@ section{
     padding-left: 15px;
     padding-right: 15px;
 }
-.search{
+#searchicone{
     font-size: 1.2em;
     font-weight: bold;
     color: white;
     height: 25px;
     width: 35px;
-
 }
 
-#filtres{
+#filters{
     display: flex;
     font-weight: bold;
     justify-content: space-between;
     width: 70%;
 }
-.bordurefiltre:hover{
+.filterborder:hover{
     color: #0065fc;
     font-style: italic;
 }
-.bordurefiltre{
+.filterborder{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -132,31 +126,31 @@ section{
     padding-right: 20px;
 }
 
-.bordurefiltre i{
+.filterborder i{
     color: #0065fc;
 }
-#eco{
+#money{
     border-radius: 50%;
     background-color: #DEEBFF;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#familial{
+#child{
     border-radius: 50%;
     background-color: #DEEBFF;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#romantique{
+#heart{
     border-radius: 50%;
     background-color: #DEEBFF;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#animaux{
+#dog{
     border-radius: 50%;
     background-color: #DEEBFF;
     padding-left: 20px;
@@ -175,7 +169,7 @@ section{
     border-radius: 50%;
     color: #0065fc;
 }
-#populaires{
+#asideblock{
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 15px 10px 15px 10px;
@@ -183,20 +177,17 @@ section{
     float: right;
     width: 33%;
 }
-#populaireshaut{
+#asidetitle{
     margin-left: 15px;
     margin-right: 15px;
 }
 
-#populaireshaut i{
+#chartline{
     float: right;
+    font-size: 1.5em;
 }
-#fleche{
-    float: right;
-    height: 20px;
-    width: 20px;
-}
-.pop{
+
+.asideelement{
     background-color: white;
     border-radius: 20px;
     margin: 5px;  
@@ -204,7 +195,7 @@ section{
     height: 150px;
 }
 
-.hotelpop_description{
+.asideelementdescription{
     float: right;
     display: flex;
     flex-direction: column;
@@ -212,31 +203,31 @@ section{
     height: 100%;
 }
 
-#hotelpop1{
+#asidephoto1{
     background: url('photos/hotellesoleildumatin.jpg') no-repeat;
     border-radius: 20px 0 0 20px;
     height: 150px;
 }
 
-#hotelpop2{
+#asidephoto2{
     background: url('photos/aucoeurdeleau.jpg') no-repeat;
     border-radius: 20px 0 0 20px;
     height: 150px;
 }
-#hotelpop3{
+#asidephoto3{
     background: url('photos/hoteltoutbleuettoutblanc.jpg') no-repeat;
     border-radius: 20px 0 0 20px;
     height: 150px;
 }
 
-.hotelpoptext1{
+.asideelementtext1{
     font-size: 1em;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.hotelpoptext2{
+.asideelementtext2{
     font-size: 0.8em;
     color: black;
     text-decoration: none;
@@ -264,7 +255,7 @@ section{
 .undersection a{
     text-decoration: none;
 }
-.hotels{
+.section1element{
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
@@ -272,55 +263,55 @@ section{
     padding: 5px;
     width: 33%;
 }
-#hotel1{
+#section1photo1{
     background: url('photos/aubergelacannebiere.jpg') no-repeat;
     height: 140px;
     border-radius: 20px 20px 0 0;
 }
-#hotel2{
+#section1photo2{
     background: url('photos/hotelduport.jpg') no-repeat;
     height: 140px;
     border-radius: 20px 20px 0 0;
 }
-#hotel3{
+#section1photo3{
     background: url('photos/hotellesmouettes.jpg') no-repeat;
     height: 140px;
     border-radius: 20px 20px 0 0;
 }
-#hotel4{
+#section1photo4{
     background: url('photos/hoteldelamer.jpg') no-repeat;
     height: 140px;
     border-radius: 20px 20px 0 0;
 }
-#hotel5{
+#section1photo5{
     background: url('photos/aubergelepanier.jpg') no-repeat;
     height: 140px;
     border-radius: 20px 20px 0 0;
 }
-#hotel6{
+#section1photo6{
     background: url('photos/hotelchezamina.jpg') no-repeat;
     height: 140px;
     border-radius: 20px 20px 0 0;
 }
 
-.hotel_description{
+.section1elementdescription{
     height: 70px;
     text-decoration: none;
 }
 
-.hoteltext1{
+.section1elementtext1{
     font-size: 1em;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.hoteltext2{
+.section1elementtext2{
     font-size: 0.8em;
     color: black;
     text-decoration: none;
 }
-.gras{
+.bold{
     font-weight: bold;
     padding-bottom: 15px;
 }
@@ -336,7 +327,7 @@ section{
     text-decoration: none;
 }
 
-.actis{
+.section2element{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -345,47 +336,47 @@ section{
     margin-bottom: 30px;
 
 }
-#acti1{
+#section2photo1{
     background: url('photos/vieuxport.jpg') no-repeat;
     border-radius: 20px 20px 0 0;
     height: 410px;
 }
-.acti_description{
+.section2elementdescription{
     height: 40px;
     width: 300px;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
-.section2colonne{
+.section2column{
     display: flex;
     flex-direction: column; 
     
 }
-#acti2{
+#section2photo2{
     background: url('photos/fortdepomegues.jpg') no-repeat;
     border-radius: 20px 20px 0 0;
     height: 200px;
     width: 300px;
 }
-#acti3{
+#section2photo3{
     background: url('photos/iledufrioul.jpg') no-repeat;
     border-radius: 20px 20px 0 0;
     height: 140px;
     width: 300px;
 }
-#acti4{
+#section2photo4{
     background: url('photos/calanques.jpg') no-repeat;
     border-radius: 20px 20px 0 0;
     height: 410px;
 }
-#acti5{
+#section2photo5{
     background: url('photos/notredamedelagarde.jpg') no-repeat;
     border-radius: 20px 20px 0 0;
     height: 170px;
     width: 300px;
 }
-#acti6{
+#section2photo6{
     background: url('photos/parclongchamps.jpg') no-repeat;
     border-radius: 20px 20px 0 0;
     height: 170px;
@@ -429,9 +420,9 @@ footer li{
         margin-left: 10px;
         }
         
-    #headright{
+    #headerright{
         float: right;
-        margin-right: 10px;
+        margin-right: 20px;
         margin-top: 15px;
         }
     nav{
@@ -454,9 +445,10 @@ footer li{
         text-align: justify;
         width: 100%;
         padding: 15px;
+        margin-right: 20px;
     }
    
-    #trouvezdroite{
+    #findright{
         display: none;
         border: #0065fc;
         background-color: #0065fc;
@@ -467,7 +459,7 @@ footer li{
         padding-right: 15px;
     }
 
-    #trouvezdroitecourt{
+    #findrightmin{
         display: flex;
         border: #0065fc;
         background-color: #0065fc;
@@ -478,44 +470,42 @@ footer li{
         padding-right: 15px;
     }
 
-    #filtres{
+    #filters{
         flex-direction: column;
         width: auto;
     }
-    .bordurefiltre{
+    .filterborder{
         justify-content: left;
         margin-bottom: 10px;
     }
     
-    #populaires{
+    #asideblock{
         width: 100%;
         padding: 10px;
         margin: auto;
     }
-    #populaireshaut{
-        text-align: left;
-    }
-    .pop{
+   
+    .asideelement{
         margin: auto;
         padding: 10px;
         margin-bottom: 10px;
     }
-    .hotelpop_description{
+    .asideelementdescription{
         font-size: 0.7em;
     }
-    .hotelpoptext1{
+    .asideelementtext1{
         max-width: 100%;
     }
     .stars{
         margin-top: 60%;
     }
-    #hotelpop1{
+    #asidephoto1{
         max-width: 50%;
     }
-    #hotelpop2{
+    #asidephoto2{
         max-width: 50%;
     }
-    #hotelpop3{
+    #asidephoto3{
         max-width: 48%;
     }
     
@@ -533,37 +523,37 @@ footer li{
         width: 100%;
     
     }
-    .hotels{
+    .section1element{
         width: auto;
         padding: 10px;
     }
 
-    #hotel1{
+    #section1photo1{
         background: url('photos/HOTEL1.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel2{
+    #section1photo2{
         background: url('photos/HOTEL2.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel3{
+    #section1photo3{
         background: url('photos/HOTEL3.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel4{
+    #scetion1photo4{
         background: url('photos/HOTEL4.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel5{
+    #section1photo5{
         background: url('photos/HOTEL5.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel6{
+    #section1photo6{
         background: url('photos/HOTEL6.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
@@ -574,47 +564,47 @@ footer li{
         width: auto;
     }
 
-    .section2colonne{
+    .section2column{
         display: flex;
         flex-direction: column;
         width: auto;
     }
-    .actis{
+    .section2element{
         width: auto;
         padding: 10px;
     }
 
-    #acti1{
+    #section2photo1{
         background: url('photos/ACTI1.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
         height: 200px;
     }
 
-    #acti2{
+    #section2photo2{
         background: url('photos/ACTI2.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
         width: 100%;
     }
 
-    #acti3{
+    #section2photo3{
         background: url('photos/ACTI3.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
         width: 100%;
     }
 
-    #acti4{
+    #section2photo4{
         background: url('photos/ACTI4.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
         height: 200px;
     }
 
-    #acti5{
+    #section2photo5{
         background: url('photos/ACTI5.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
         width: 100%;
     }
 
-    #acti6{
+    #section2photo6{
         background: url('photos/ACTI6.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
         width: 100%;
@@ -640,21 +630,21 @@ footer li{
         padding-right: 10px;
     }
 
-    #filtres{
+    #filters{
         font-size: 0.9em;
     }
 
     aside{
         padding: 10px;
     }
-    #populaires{
+    #asideblock{
         width: 80%;
         justify-content: center;
         float: none;
         margin-bottom: 15px;
         padding-left: 15%;
     }
-    .pop{
+    .asideelement{
         width: 70%;
     }
 
@@ -662,37 +652,37 @@ footer li{
         width: 90%;
         margin: 10px;
     }
-    #hebergements{
+    #anchorsection1{
         padding-left: 10px;
     }
     #section2{
         flex-wrap: wrap;
         width: auto;
     }
-    #activites{
+    #anchorsection2{
         padding-left: 20px;
     }
-    .actis{
+    .section2element{
         width: auto;
     }
 }
 
 @media all and (min-device-width: 1024px) and (max-device-width: 1024px)
 {
-    #filtres{
+    #filters{
         width: auto;
     }
     
-    #populaires{
+    #asideblock{
         width: 33%;
         float: right;
         padding-bottom: 30px;
     }
-    .hotelpoptext1{
+    .asideelementtext1{
         font-size: 0.6em;
     }
 
-    .hotelpoptext2{
+    .asideelementtext2{
         font-size: 0.6em;
     }
 
@@ -704,11 +694,11 @@ footer li{
         width: 60%;
         margin: 10px;
     }
-    #hebergements{
+    #anchorsection1{
         padding-left: 10px;
     }
 
-    .hoteltext1{
+    .section1elementtext1{
         font-size: 0.9em;
     }
     #section2{
@@ -716,32 +706,32 @@ footer li{
         flex-direction: row;
         justify-content: start;
     }
-    #activites{
+    #anchorsection2{
         padding-left: 20px;
     }
-    .actis{
+    .section2element{
         width: 200px;
         margin: 15px;
     }
-    #acti1{
+    #section2photo1{
         width: 100%;
     }
-    #acti2{
+    #section2photo2{
         width: 100%;
     }
-    #acti3{
+    #section2photo3{
         width: 100%;
     }
-    #acti4{
+    #section2photo4{
         width: 100%;
     }
-    #acti5{
+    #section2photo5{
         width: 100%;
     }
-    #acti6{
+    #section2photo6{
         width: 100%;
     }
-    .acti_description{
+    .section2elementdescription{
         width: auto;
         font-size: 0.8em;
     }
@@ -763,7 +753,7 @@ footer li{
     padding-top: 80px;
     }
 
-    #filtres{
+    #filters{
         width: 80%;
         font-size: 1.1em;
     }
@@ -778,11 +768,11 @@ footer li{
     section a{
         font-size: 1.2em;
     }
-    #populaires{
+    #asideblock{
         width: 20%;
         padding: 25px 15px 25px 15px;
     }
-    .pop{
+    .asideelement{
         margin-bottom: 55px;
     }
     .stars{
@@ -791,47 +781,47 @@ footer li{
     #section1{
         padding: 25px 20px 20px 20px;
     }
-    #hebergements{
+    #anchorsection1{
         margin-left: 5%;
     }
     .undersection{
         margin: 10px;
     }
-    .hotels{
+    .section1element{
         width: 25%;
         margin: 35px;
     }
 
-    #hotel1{
+    #section1photo1{
         background: url('photos/HOTEL1.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel2{
+    #sectionphoto2{
         background: url('photos/HOTEL2.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel3{
+    #section1photo3{
         background: url('photos/HOTEL3.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel4{
+    #sectionphoto4{
         background: url('photos/HOTEL4.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel5{
+    #sectionphoto5{
         background: url('photos/HOTEL5.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
 
-    #hotel6{
+    #sectionphoto6{
         background: url('photos/HOTEL6.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
     }
-    #activites{
+    #anchorsection2{
         margin-left: 11%;
         font-size: 1.5em;
     }
