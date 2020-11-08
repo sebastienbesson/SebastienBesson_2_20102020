@@ -11,7 +11,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     text-align: right;
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
 }
 #headermin{
     display: none;
@@ -43,16 +43,10 @@ nav a{
 nav a:hover{
     border-top: 2px #0065fc solid;
     color: #0065fc;
-    padding-top: 16px;
+    padding-top: 35px;
 }
 
 #headerright{
-    color: #0065fc;
-    font-weight: bold;
-    margin-left: 0px;
-}
-
-#headerrightmin{
     color: #0065fc;
     font-weight: bold;
     margin-left: 0px;
@@ -62,14 +56,13 @@ section{
     padding: 20px;
 }
 
-section h2{
+#sectionheaderundertitle{
     font-size: 1.1em;
-    font-weight: normal;
-    padding-bottom: 15px;
 }
 #find{
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -78,8 +71,8 @@ section h2{
     border-radius: 20px 0px 0px 20px;
     width: 35px;
     text-align: center;
+    padding-top: 10px;
 }
-
 
 #findcenter{
     border-top: 1px #F2F2F2 solid;
@@ -88,39 +81,22 @@ section h2{
 
 #city{
     border: white;
+    margin: 10px;
 }
-#findright{
-    border: #0065fc;
-    background-color: #0065fc;
-    border-radius: 0px 20px 20px 0px;
-    text-align: justify;
-    justify-content: space-around;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 #searching{
     border: #0065fc;
     background-color: #0065fc;
+    border-radius: 0px 20px 20px 0px;
     font-size: 1.2em;
     font-weight: bold;
     color: white;
-}
-#findrightmin{
-    display: none;
-    border: #0065fc;
-    background-color: #0065fc;
-    border-radius: 0px 20px 20px 0px;
-    text-align: justify;
-    justify-content: space-around;
     padding-left: 15px;
     padding-right: 15px;
 }
+
 #searchicone{
-    font-size: 1.2em;
-    font-weight: bold;
-    color: white;
-    height: 25px;
-    width: 35px;
+    display: none;
 }
 
 #filters{
@@ -128,6 +104,11 @@ section h2{
     font-weight: bold;
     justify-content: space-between;
     width: 70%;
+    margin-top: 35px;
+}
+
+#filtertitle{
+    margin-top: 17px;
 }
 .filterborder:hover{
     color: #0065fc;
@@ -137,6 +118,7 @@ section h2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    vertical-align: middle;
     border-top: 2px #F2F2F2 solid;
     border-right: 2px #F2F2F2 solid;
     border-bottom: 2px #F2F2F2 solid;
@@ -144,35 +126,21 @@ section h2{
     padding-right: 20px;
 }
 
+.filtertext{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
 .filterborder i{
     color: #0065fc;
 }
-#money{
+.filtericone{
     border-radius: 50%;
     background-color: #DEEBFF;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#child{
-    border-radius: 50%;
-    background-color: #DEEBFF;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#heart{
-    border-radius: 50%;
-    background-color: #DEEBFF;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#dog{
-    border-radius: 50%;
-    background-color: #DEEBFF;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
 }
 
 #info{
@@ -208,6 +176,7 @@ section h2{
 .asideelement{
     background-color: white;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px #e9e6e6;
     margin: 5px;  
     padding: 5px; 
     height: 150px;
@@ -217,6 +186,7 @@ section h2{
     float: right;
     display: flex;
     flex-direction: column;
+    width: 50%;
     font-size: 1.1em;
     height: 100%;
 }
@@ -251,7 +221,7 @@ section h2{
     text-decoration: none;
 }
 .stars{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .whitestar{
@@ -268,6 +238,7 @@ section h2{
 }
 .undersection{
     display: flex;
+    padding-bottom: 18px;
 }
 
 .undersection a{
@@ -277,6 +248,7 @@ section h2{
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px #e9e6e6;
     margin: 5px;  
     padding: 5px;
     width: 33%;
@@ -329,9 +301,9 @@ section h2{
     color: black;
     text-decoration: none;
 }
-.bold{
+.section1bottom{
     font-weight: bold;
-    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 #section2{
@@ -350,7 +322,7 @@ section h2{
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px #F2F2F2;
+    box-shadow: 5px 5px 5px #F2F2F2;
     margin-bottom: 20px;
 }
 #section2photo1{
@@ -400,32 +372,31 @@ section h2{
 }
 footer{
     display: flex;
+    flex-direction: row;
     background-color: #F2F2F2;
     justify-content: space-between;
-    margin-top: 10px;
-    padding-right: 10%;
+    padding-top: 50px;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-}
-
-footer h1{
+.footertitle{
     font-size: 1.1em;
+    font-weight: bold;
     padding-left: 40px;
 }
 
-footer ul{
+.footerelement{
+    margin-right: 15%;
+}
+footer li{
     list-style-type: none;
 }
 
 
-@media all and (max-device-width: 767px)
+@media all and (max-width: 320px)
 {
     body{
-        width: auto;
-        margin: auto;
+        width: 100%;
+        margin: 0px;
     }
 
     #header{
@@ -435,78 +406,122 @@ footer ul{
     #headermin{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
         padding: 5px;
         }
-    #reservialogo{
+
+    #reservialogomin{
         float: left;
-        margin-left: 10px;
+        margin-left: 0px;
+        margin-right: 100px;
         }
         
     #headerright{
         float: right;
         margin-right: 20px;
-        margin-top: 15px;
+        padding-top: 25px;
         }
+
+    #headerrightmin{
+        color: #0065fc;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
     nav{
         width: 100%;
+        padding: 0px;
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 16px;
+        padding-top: 20px;
     }
+
+    #navmin{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        padding: 30px;
+    }
+
+    #navmintext1{
+        width: 100%;
+        padding: 25px;
+    }
+
     nav a{
         color: black;
         text-decoration: none; 
     }
     
     nav a:hover{
-        border-top: 2px #0065fc solid;
+        border-bottom: 2px #0065fc solid;
+        border-top: 0px;
         color: #0065fc;
         padding-bottom: 16px;
     }
-    #navmin{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: justify;
-        width: 100%;
-        padding: 15px;
-        margin-right: 20px;
+
+    section H1{
+        font-size: 1.1em;
     }
-   
-    #findright{
+
+    #sectionheaderundertitle{
+        font-size: 0.9em;
+    }
+  
+    #findleft{
+        padding: 20px;
+    }
+    #searching{
         display: none;
         border: #0065fc;
         background-color: #0065fc;
         border-radius: 0px 20px 20px 0px;
-        text-align: justify;
-        justify-content: space-around;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
         padding-left: 15px;
         padding-right: 15px;
     }
-
-    #findrightmin{
-        display: flex;
+    
+    #searchicone{
+        display: inline;
         border: #0065fc;
         background-color: #0065fc;
-        border-radius: 0px 20px 20px 0px;
-        text-align: justify;
-        justify-content: space-around;
-        padding-left: 15px;
-        padding-right: 15px;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        height: 35px;
+        width: 35px;
+        padding: 15px;
     }
 
     #filters{
+        display: flex;
         flex-direction: column;
         width: auto;
     }
+
+    #filtertitle{
+        padding-bottom: 15px;
+    }
+
     .filterborder{
         justify-content: left;
         margin-bottom: 10px;
     }
     
     #asideblock{
-        width: 100%;
+        width: 95%;
         padding: 10px;
-        margin: auto;
+        justify-content: center;
+        float: none;
+    }
+    aside H2{
+        font-size: 1em;
+        padding-bottom: 20px;
     }
    
     .asideelement{
@@ -516,12 +531,20 @@ footer ul{
     }
     .asideelementdescription{
         font-size: 0.7em;
+        width: 50%;
+        padding-left: 10px;
     }
     .asideelementtext1{
-        max-width: 100%;
+        max-width: 90%;
+        padding-left: 5px;
+    }
+    .asideelementtext2{
+        max-width: 90%;
+        padding-left: 5px;
     }
     .stars{
-        margin-top: 60%;
+        margin-top: 55%;
+        padding-left: 5px;
     }
     #asidephoto1{
         max-width: 50%;
@@ -530,21 +553,25 @@ footer ul{
         max-width: 50%;
     }
     #asidephoto3{
-        max-width: 48%;
+        max-width: 50%;
     }
     
+    section H2{
+        font-size: 1.1em;
+        padding-left: 15px;
+    }
     #section1{
         background-color: white;
         display: flex;
         flex-direction: column;
         width: 90%;
         padding: 10px;
-    
     }
     .undersection{
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding-bottom: 0px;
     
     }
     .section1element{
@@ -639,11 +666,308 @@ footer ul{
         flex-direction: column;
         width: 100%;
         margin: 0px;
-        padding: 0px;
+        padding: 25px 0 0 0;
+    }
+
+    footer ul{
+        font-size: 0.9em;
     }
 }
-@media all and (min-device-width: 768px) and (max-device-width: 1023px)
+
+@media all and (min-width: 321px) and (max-width: 767px)
 {
+    body{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #header{
+        display: none;
+    }
+
+    #headermin{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 5px;
+        }
+
+    #reservialogomin{
+        float: left;
+        margin-left: 0px;
+        margin-right: 100px;
+        }
+        
+    #headerright{
+        float: right;
+        margin-right: 20px;
+        padding-top: 25px;
+        }
+
+    #headerrightmin{
+        color: #0065fc;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    nav{
+        width: 100%;
+        padding: 0px;
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 16px;
+        padding-top: 20px;
+    }
+
+    #navmin{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        padding: 30px;
+    }
+
+    #navmintext1{
+        width: 100%;
+        padding: 25px;
+    }
+
+    nav a{
+        color: black;
+        text-decoration: none; 
+    }
+    
+    nav a:hover{
+        border-bottom: 2px #0065fc solid;
+        border-top: 0px;
+        color: #0065fc;
+        padding-bottom: 16px;
+    }
+
+    section H1{
+        font-size: 1.1em;
+    }
+
+    #sectionheaderundertitle{
+        font-size: 0.9em;
+    }
+  
+    #findleft{
+        padding: 20px;
+    }
+
+    #city{
+        padding-top: 15px;
+    }
+
+    #searching{
+        display: none;
+        border: #0065fc;
+        background-color: #0065fc;
+        border-radius: 0px 20px 20px 0px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #searchicone{
+        display: inline;
+        border: #0065fc;
+        background-color: #0065fc;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        height: 35px;
+        width: 35px;
+        padding: 15px;
+    }
+
+    #filters{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    #filtertitle{
+        padding-bottom: 15px;
+    }
+
+    .filterborder{
+        justify-content: left;
+        margin-bottom: 10px;
+    }
+    
+    #asideblock{
+        width: 95%;
+        padding: 10px;
+        justify-content: center;
+        float: none;
+    }
+    aside H2{
+        font-size: 1em;
+        padding-bottom: 20px;
+    }
+   
+    .asideelement{
+        margin: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .asideelementdescription{
+        font-size: 0.7em;
+        width: 50%;
+        padding-left: 10px;
+    }
+    .asideelementtext1{
+        max-width: 90%;
+        padding-left: 5px;
+    }
+    .asideelementtext2{
+        max-width: 90%;
+        padding-left: 5px;
+    }
+
+    .stars{
+        margin-top: 40%;
+        padding-left: 5px;
+    }
+    #asidephoto1{
+        max-width: 50%;
+    }
+    #asidephoto2{
+        max-width: 50%;
+    }
+    #asidephoto3{
+        max-width: 50%;
+    }
+    
+    section H2{
+        font-size: 1.1em;
+        padding-left: 15px;
+    }
+    #section1{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    
+    }
+    .undersection{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .section1element{
+        width: auto;
+        padding: 10px;
+    }
+
+    #section1photo1{
+        background: url('photos/HOTEL1.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section1photo2{
+        background: url('photos/HOTEL2.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section1photo3{
+        background: url('photos/HOTEL3.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section1photo4{
+        background: url('photos/HOTEL4.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section1photo5{
+        background: url('photos/HOTEL5.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section1photo6{
+        background: url('photos/HOTEL6.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .section2column{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .section2element{
+        width: auto;
+        padding: 10px;
+    }
+
+    #section2photo1{
+        background: url('photos/ACTI1.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 200px;
+    }
+
+    #section2photo2{
+        background: url('photos/ACTI2.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    #section2photo3{
+        background: url('photos/ACTI3.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    #section2photo4{
+        background: url('photos/ACTI4.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 200px;
+    }
+
+    #section2photo5{
+        background: url('photos/ACTI5.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    #section2photo6{
+        background: url('photos/ACTI6.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 25px 0 0 0;
+    }
+
+    footer ul{
+        font-size: 0.9em;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    body{
+        width: 100%;
+    }
+
     #header{
         width: 100%;
     }
@@ -654,8 +978,18 @@ footer ul{
         padding-right: 10px;
     }
 
+    section{
+        width: 100%;
+    }
+
     #filters{
         font-size: 0.9em;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .filterborder{
+        width: 20%;
     }
 
     aside{
@@ -672,6 +1006,14 @@ footer ul{
         width: 70%;
     }
 
+    .asideelementdescription{
+        width: 50%;
+    }
+
+    .stars{
+        margin-top: 10%;
+    }
+
     #section1{
         width: 90%;
         margin: 10px;
@@ -681,7 +1023,8 @@ footer ul{
     }
     #section2{
         flex-wrap: wrap;
-        width: auto;
+        width: 90%;
+        padding-right: 10px;
     }
     #anchorsection2{
         padding-left: 20px;
@@ -689,10 +1032,29 @@ footer ul{
     .section2element{
         width: auto;
     }
+
+    footer{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .footertitle{
+        margin-right: 10%;
+        font-size: 0.9em;
+    }
+
+    .footerelement{
+        margin-right: 5%;
+        font-size: 0.8em;
+    }
 }
 
-@media all and (min-device-width: 1024px) and (max-device-width: 1024px)
+@media all and (min-width: 1024px) and (max-width: 1024px)
 {
+    body{
+        width: 95%;
+        margin: 5px;
+    }
     #filters{
         width: auto;
     }
@@ -702,8 +1064,24 @@ footer ul{
         float: right;
         padding-bottom: 30px;
     }
+
+    .asideelementdescription{
+        width: 50%;
+    }
+    #asidephoto1{
+        width: 45%;
+    }
+
+    #asidephoto2{
+        width: 45%;
+    }
+
+    #asidephoto3{
+        width: 45%;
+    }
+
     .asideelementtext1{
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 
     .asideelementtext2{
@@ -711,7 +1089,7 @@ footer ul{
     }
 
     .stars{
-        margin-top: 40%;
+        margin-top: 30%;
     }
 
     #section1{
@@ -722,6 +1100,10 @@ footer ul{
         padding-left: 10px;
     }
 
+    .undersection{
+        padding-bottom: 20px;
+        
+    }
     .section1elementtext1{
         font-size: 0.9em;
     }
@@ -760,9 +1142,271 @@ footer ul{
         font-size: 0.8em;
     }
 
+    .footerelement{
+        margin-right: 10%;
+    }
+
 }
 
-@media all and (min-device-width: 2560px)
+@media all and (min-width: 1920px) and (max-width: 2559px)
+{
+    header{
+        margin: 60px 60px 0px 60px;
+    }
+    
+    #reservialogo{
+        height: 250px;
+        width: 250px;
+    }
+
+    nav{
+        font-size: 2em;
+        padding-top: 80px;
+    }
+    
+    section H1{
+        font-size: 1.5em;
+    }
+    
+    #sectionheaderundertitle{
+        font-size: 1em;
+    }
+    
+    #find{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+        
+    #findleft{
+        background-color: #F2F2F2;
+        border-radius: 20px 0px 0px 20px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        padding-top: 20px;
+    }
+        
+    #findcenter{
+        border-top: 1px #F2F2F2 solid;
+        border-bottom: 1px #F2F2F2 solid;
+        width: 15%;
+    }
+        
+    #city{
+        border: white;
+        margin: 25px;
+        font-size: 0.8em;
+    }
+        
+    #searching{
+        border: #0065fc;
+        background-color: #0065fc;
+        border-radius: 0px 20px 20px 0px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #filters{
+        width: 80%;
+        font-size: 1.1em;
+        margin-bottom: 35px;
+    }
+
+    #info{
+        margin-bottom: 35px;
+    }
+
+    section{
+        margin: 0px 60px 60px 60px;
+    }
+    
+    section header{
+        font-size: 1.5em;
+    }
+    
+    section a{
+        font-size: 1.2em;
+    }
+
+    #asideblock{
+        width: 30%;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    aside H2{
+        font-size: 2em;
+    }
+    
+    .asideelement{
+        margin: 20px;
+        height: 250px;
+    }
+    
+    #asidephoto1{
+        background: url('photos/HOTELPOP1.jpg') no-repeat;
+        border-radius: 20px 0 0 20px;
+        height: 250px;
+    }
+        
+    #asidephoto2{
+        background: url('photos/HOTELPOP2.jpg') no-repeat;
+        border-radius: 20px 0 0 20px;
+        height: 250px;
+    }    
+    #asidephoto3{
+        background: url('photos/HOTELPOP3.jpg') no-repeat;
+        border-radius: 20px 0 0 20px;
+        height: 250px;
+    }
+    .asideelementdescription{
+        width: 40%;
+        padding-left: 5px;
+    }
+    .asideelementtext1{
+        font-size: 1em;
+        max-width: 90%;
+    }
+    .asideelementtext2{
+        font-size: 0.9em;
+        max-width: 90%;
+        padding-left: 5px;
+    }
+    .stars{
+        margin-top: 20%;
+        padding-left: 5px;
+    }
+
+    #anchorsection1{
+        margin-left: 5%;
+    }
+
+    #section1 H2{
+        font-size: 2.5em;
+    }
+    .undersection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .section1element{
+        width: 35%;
+        margin: 25px;
+    }
+
+    #section1photo1{
+        background: url('photos/HOTELMAX1.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 250px;
+    }
+
+    #section1photo2{
+        background: url('photos/HOTELMAX2.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 250px;
+    }
+
+    #section1photo3{
+        background: url('photos/HOTELMAX3.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 250px;
+    }
+
+    #section1photo4{
+        background: url('photos/HOTELMAX4.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 250px;
+    }
+
+    #section1photo5{
+        background: url('photos/HOTELMAX5.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 250px;
+    }
+
+    #section1photo6{
+        background: url('photos/HOTELMAX6.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 250px;
+    }
+
+    .section1bottom{
+        font-size: 2em;
+        padding-top: 0px;
+        margin-left: 35px;
+        margin-bottom: 35px;
+    }
+
+    #anchorsection2{
+        margin-left: 8%;
+        font-size: 2.5em;
+        margin-top: 35px;
+    }
+    #section2{
+        width: 95%;
+    }
+
+    .section2element{
+        margin: 15px;
+    }
+
+    #section2photo1{
+        background: url('photos/ACTIMAX1.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 650px;
+        width: 400px;
+    }
+
+    #section2photo2{
+        background: url('photos/ACTIMAX2.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    #section2photo3{
+        background: url('photos/ACTIMAX3.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    #section2photo4{
+        background: url('photos/ACTIMAX4.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 650px;
+        width: 400px;
+    }
+    #section2photo5{
+        background: url('photos/ACTIMAX5.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    #section2photo6{
+        background: url('photos/ACTIMAX6.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    #section2elementdescription{
+        font-size: 1.2em;
+    }
+
+    footer{
+        padding: 40px;
+        font-size: 1.5em;
+    }
+}    
+
+@media all and (min-width: 2560px)
 {
     header{
     margin: 60px 60px 0px 60px;
@@ -775,6 +1419,53 @@ footer ul{
     nav{
     font-size: 2em;
     padding-top: 80px;
+    }
+
+    section H1{
+        font-size: 2.5em;
+    }
+
+    #sectionheaderundertitle{
+        font-size: 1.5em;
+    }
+
+    #find{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #findleft{
+        background-color: #F2F2F2;
+        border-radius: 20px 0px 0px 20px;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    #findcenter{
+        border-top: 1px #F2F2F2 solid;
+        border-bottom: 1px #F2F2F2 solid;
+        width: 15%;
+    }
+    
+    #city{
+        border: white;
+        margin: 30px;
+        font-size: 1em;
+    }
+    
+    #searching{
+        border: #0065fc;
+        background-color: #0065fc;
+        border-radius: 0px 20px 20px 0px;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #filters{
@@ -793,70 +1484,173 @@ footer ul{
         font-size: 1.2em;
     }
     #asideblock{
-        width: 20%;
-        padding: 25px 15px 25px 15px;
+        width: 30%;
+        padding: 25px 25px 25px 25px;
     }
+
+    aside H2{
+        font-size: 2em;
+    }
+
     .asideelement{
-        margin-bottom: 55px;
+        margin: 25px;
+        height: 250px;
+    }
+
+    #asidephoto1{
+        background: url('photos/HOTELPOP1.jpg') no-repeat;
+        border-radius: 20px 0 0 20px;
+        height: 250px;
+    }
+    
+    #asidephoto2{
+        background: url('photos/HOTELPOP2.jpg') no-repeat;
+        border-radius: 20px 0 0 20px;
+        height: 250px;
+    }
+    #asidephoto3{
+        background: url('photos/HOTELPOP3.jpg') no-repeat;
+        border-radius: 20px 0 0 20px;
+        height: 250px;
+    }
+    .asideelementdescription{
+        width: 50%;
+        padding-left: 10px;
+    }
+    .asideelementtext1{
+        font-size: 1.3em;
+        max-width: 90%;
+        padding-left: 5px;
+    }
+    .asideelementtext2{
+        font-size: 1.2em;
+        max-width: 90%;
+        padding-left: 5px;
     }
     .stars{
-        margin-top: 5%;
+        margin-top: 20%;
+        padding-left: 5px;
     }
-    #section1{
-        padding: 25px 20px 20px 20px;
-    }
+
     #anchorsection1{
         margin-left: 5%;
     }
+
+    #section1 H2{
+        font-size: 2.5em;
+    }
     .undersection{
-        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
     }
     .section1element{
-        width: 25%;
+        width: 35%;
         margin: 35px;
     }
 
     #section1photo1{
-        background: url('photos/HOTEL1.jpg') no-repeat;
+        background: url('photos/HOTELMAX1.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
+        height: 250px;
     }
 
-    #sectionphoto2{
-        background: url('photos/HOTEL2.jpg') no-repeat;
+    #section1photo2{
+        background: url('photos/HOTELMAX2.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
+        height: 250px;
     }
 
     #section1photo3{
-        background: url('photos/HOTEL3.jpg') no-repeat;
+        background: url('photos/HOTELMAX3.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
+        height: 250px;
     }
 
-    #sectionphoto4{
-        background: url('photos/HOTEL4.jpg') no-repeat;
+    #section1photo4{
+        background: url('photos/HOTELMAX4.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
+        height: 250px;
     }
 
-    #sectionphoto5{
-        background: url('photos/HOTEL5.jpg') no-repeat;
+    #section1photo5{
+        background: url('photos/HOTELMAX5.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
+        height: 250px;
     }
 
-    #sectionphoto6{
-        background: url('photos/HOTEL6.jpg') no-repeat;
+    #section1photo6{
+        background: url('photos/HOTELMAX6.jpg') no-repeat;
         border-radius: 20px 20px 0 0;
+        height: 250px;
     }
+
+    .section1bottom{
+        font-size: 2em;
+        padding-top: 0px;
+        margin-left: 35px;
+        margin-bottom: 35px;
+    }
+
     #anchorsection2{
-        margin-left: 11%;
-        font-size: 1.5em;
+        margin-left: 8%;
+        font-size: 2.5em;
+        margin-top: 35px;
     }
     #section2{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #section2photo1{
+        background: url('photos/ACTIMAX1.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 650px;
+        width: 450px;
+    }
+
+    #section2photo2{
+        background: url('photos/ACTIMAX2.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 450px;
+    }
+
+    #section2photo3{
+        background: url('photos/ACTIMAX3.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 450px;
+    }
+
+    #section2photo4{
+        background: url('photos/ACTIMAX4.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 650px;
+        width: 450px;
+    }
+    #section2photo5{
+        background: url('photos/ACTIMAX5.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 450px;
+    }
+
+    #section2photo6{
+        background: url('photos/ACTIMAX6.jpg') no-repeat;
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 450px;
+    }
+
+    #section2elementdescription{
+        font-size: 1.2em;
     }
 
     footer{
         padding: 40px;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="reservia.css" />
@@ -13,8 +13,8 @@
             <div id="header">
                 <img src="logos/Reservia.svg" id="reservialogo" alt="logo"/>
                 <nav>
-                    <div><a href="#hebergements">Hébergements</a></div>
-                    <div><a href="#activites">Activités</a></div>
+                    <div><a href="#anchorsection1">Hébergements</a></div>
+                    <div><a href="#anchorsection2">Activités</a></div>
                     <span id="headerright">S'Inscrire</span> 
                 </nav>  
             </div>
@@ -24,58 +24,51 @@
             </div>
             <div id="navmin">  
                 <nav> 
-                    <div><a href="#anchorsection1">Hébergements</a></div>
-                    <div><a href="#anchorsection2">Activités</a></div>
+                    <div id="navimintext1"><a href="#anchorsection1">Hébergements</a></div>
+                    <div id="navimintext2"><a href="#anchorsection2">Activités</a></div>
                 </nav>  
             </div>
         </header>
         <section>
             <header>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <h2>En plein centre ville ou en pleine nature</h2>   
+                    <span id="sectionheaderundertitle">En plein centre ville ou en pleine nature</span>   
                     <div id="find">
                         <div id="findleft">
-                            <p><i class="fas fa-map-marker-alt"></i></p>
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div id="findcenter">
-                            <p>
-                                <form method="post" action="traitement.php">
-                                    <label for="ville"></label><input type="text" name="ville" id="city"/>
-                                </form>
-                            </p>
+                            <form method="post" action="traitement.php"><input type="text" name="ville" id="city"/></form>
                         </div>
-                        <div id="findright">
-                            <p><input type="button" name="rechercher" value="Rechercher" id="searching"/></p>
-                        </div>
-                        <div id="findrightmin">
-                            <p><input type="image" name="rechercher" src="logos/search.png" id="searchicone"/></p>
-                        </div>
+                            <input type="button" name="rechercher" value="Rechercher" id="searching"/>
+                            <input type="image" name="rechercher" src="logos/search.png" alt="loupe" id="searchicone"/>
+                        
                     </div>  
                     <div id="filters">
-                        <p>Filtres</p>
+                        <span id="filtertitle">Filtres</span>
                             <div class="filterborder">
-                                <div id="money">  
-                                    <p><i class="fas fa-money-bill-wave-alt"></i></p>
+                                <div class="filtericone">  
+                                    <i class="fas fa-money-bill-wave-alt"></i>
                                 </div>
-                                    <p>Economique</p>
+                                    <span class="filtertext">Economique</span>
                             </div>
                             <div class="filterborder">
-                                <div id="child">
-                                    <p><i class="fas fa-child"></i></p>
+                                <div class="filtericone">
+                                    <i class="fas fa-child"></i>
                                 </div>
-                                    <p>Familial</p>
+                                    <span class="filtertext">Familial</span>
                             </div>
                             <div class="filterborder">
-                                <div id="heart">
-                                    <p><i class="fas fa-heart"></i></p>
+                                <div class="filtericone">
+                                    <i class="fas fa-heart"></i>
                                 </div>
-                                    <P>Romantique</P>
+                                    <span class="filtertext">Romantique</span>
                             </div>
                             <div class="filterborder">
-                                <div id="dog">
-                                    <p><i class="fas fa-dog"></i></p>
+                                <div class="filtericone">
+                                    <i class="fas fa-dog"></i>
                                 </div>  
-                                    <p>Animaux autorisés</p>
+                                    <span class="filtertext">Animaux autorisés</span>
                             </div>
                     </div>
                         <div id=info><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
@@ -84,7 +77,7 @@
                 <div id="asideblock">
                         <div id="asidetitles">
                             <span id="chartline"><i class="fas fa-chart-line"></i></span>
-                            <h1>Les plus populaires</h1>
+                            <h2>Les plus populaires</h2>
                         </div>
                             <div class="asideelement">
                                 <a href="Hôtellesoleildumatin.html">
@@ -101,9 +94,7 @@
                                     </div>
                                     <div id="asidephoto1"></div>
                                 </a>  
-                            </div>
-                               
-                            
+                            </div>                         
                             <div class="asideelement">
                                 <a href="Aucoeurdeleau.html">    
                                     <div class="asideelementdescription">
@@ -139,7 +130,7 @@
                 </div>
             </aside>
             <div id=section1>
-                <h1 id="anchorsection1">Hébergements à Marseille</h1>
+                <h2 id="anchorsection1">Hébergements à Marseille</h2>
                     <div class="undersection">
                         <div class="section1element">
                             <a href="AubergeLaCannebière.html">
@@ -228,9 +219,9 @@
                             </a>
                         </div>
                     </div>
-                <p><span class="bold">Afficher plus</span></p>
+                <span class="section1bottom">Afficher plus</span>
             </div>
-                <h1 id="anchorsection2">Activités à Marseille</h1>
+                <h2 id="anchorsection2">Activités à Marseille</h2>
                     <div id="section2">
                             <div class="section2element">
                                 <a href="leVieuxPort.html">
@@ -276,7 +267,7 @@
         </section>
         <footer>
             <div class="footerelement">
-                <h1>A Propos</h1>
+                <span class="footertitle">A Propos</span>
                     <ul>
                         <li>Fonctionnement du site</li>
                         <li>Conditions générales de vente</li>
@@ -284,14 +275,14 @@
                     </ul>
             </div>
             <div class="footerelement">
-                <h1>Nos hébergements</h1>
+                <span class="footertitle">Nos hébergements</span>
                     <ul>
                         <li>Charte qualité</li>
                         <li>Soumettre votre hôtel</li>
                     </ul>
             </div>
             <div class="footerelement">
-                <h1>Assistance</h1>  
+                <span class="footertitle">Assistance</span>  
                     <ul>
                         <li>Centre d'aide</li>
                         <li>Nous contacter</li>
