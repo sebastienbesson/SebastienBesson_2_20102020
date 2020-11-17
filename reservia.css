@@ -1409,6 +1409,7 @@ footer li{
 {
     body{
         max-width: 2560px;
+        margin: auto;
     }
     header{
     margin: 60px 60px 0px 60px;
