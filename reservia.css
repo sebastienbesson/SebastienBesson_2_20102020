@@ -774,7 +774,6 @@ footer li{
     
     #searchicone{
         display: inline;
-        border: #0065fc;
         background-color: #0065fc;
         border-radius: 20px 20px 20px 20px;
         font-size: 1em;
@@ -1408,6 +1407,9 @@ footer li{
 
 @media all and (min-width: 2560px)
 {
+    body{
+        max-width: 2560px;
+    }
     header{
     margin: 60px 60px 0px 60px;
     }
@@ -1458,7 +1460,6 @@ footer li{
     }
     
     #searching{
-        border: #0065fc;
         background-color: #0065fc;
         border-radius: 0px 20px 20px 0px;
         font-size: 2em;
