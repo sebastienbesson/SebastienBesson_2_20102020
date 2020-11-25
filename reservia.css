@@ -177,7 +177,7 @@ section{
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #e9e6e6;
-    margin: 5px;  
+    margin: 5px 5px 15px 5px;  
     padding: 5px; 
     height: 150px;
 }
@@ -186,26 +186,17 @@ section{
     float: right;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     font-size: 1.1em;
     height: 100%;
 }
 
-#asidephoto1{
-    background: url('photos/hotellesoleildumatin.jpg') no-repeat;
-    border-radius: 20px 0 0 20px;
+.asidephoto{
+    float: left;
     height: 150px;
-}
-
-#asidephoto2{
-    background: url('photos/aucoeurdeleau.jpg') no-repeat;
+    width: 50%;
     border-radius: 20px 0 0 20px;
-    height: 150px;
-}
-#asidephoto3{
-    background: url('photos/hoteltoutbleuettoutblanc.jpg') no-repeat;
-    border-radius: 20px 0 0 20px;
-    height: 150px;
+    overflow: hidden;
 }
 
 .asideelementtext1{
@@ -251,37 +242,13 @@ section{
     box-shadow: 5px 5px 5px #e9e6e6;
     margin: 5px;  
     padding: 5px;
-    width: 33%;
+    width: 30%;
 }
-#section1photo1{
-    background: url('photos/aubergelacannebiere.jpg') no-repeat;
-    height: 140px;
+.section1photo{
+    height: 150px;
+    width: auto;
     border-radius: 20px 20px 0 0;
-}
-#section1photo2{
-    background: url('photos/hotelduport.jpg') no-repeat;
-    height: 140px;
-    border-radius: 20px 20px 0 0;
-}
-#section1photo3{
-    background: url('photos/hotellesmouettes.jpg') no-repeat;
-    height: 140px;
-    border-radius: 20px 20px 0 0;
-}
-#section1photo4{
-    background: url('photos/hoteldelamer.jpg') no-repeat;
-    height: 140px;
-    border-radius: 20px 20px 0 0;
-}
-#section1photo5{
-    background: url('photos/aubergelepanier.jpg') no-repeat;
-    height: 140px;
-    border-radius: 20px 20px 0 0;
-}
-#section1photo6{
-    background: url('photos/hotelchezamina.jpg') no-repeat;
-    height: 140px;
-    border-radius: 20px 20px 0 0;
+    overflow: hidden;
 }
 
 .section1elementdescription{
@@ -310,7 +277,7 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    width: 100%;
 }
 
 #section2 a{
@@ -320,56 +287,52 @@ section{
 .section2element{
     display: flex;
     flex-direction: column;
+    width: 280px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 5px 5px 5px #F2F2F2;
-    margin-bottom: 20px;
+    margin: 10px;
+    padding: 5px;
 }
-#section2photo1{
-    background: url('photos/vieuxport.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-    height: 460px;
-}
-.section2elementdescription{
-    height: 40px;
-    width: 300px;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
+
 .section2column{
     display: flex;
     flex-direction: column;
 }
-#section2photo2{
-    background: url('photos/fortdepomegues.jpg') no-repeat;
+
+.section2element2{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #F2F2F2;
+    margin: 10px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.section2photoa{
+    border-radius: 20px 20px 0 0;
+    height: 470px;
+    overflow: hidden;
+}
+
+.section2photob{
     border-radius: 20px 20px 0 0;
     height: 200px;
-    width: 300px;
+    overflow: hidden;
 }
-#section2photo3{
-    background: url('photos/iledufrioul.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-    height: 195px;
-    width: 300px;
+
+.section2elementdescription{
+    height: 40px;
+    width: auto;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
-#section2photo4{
-    background: url('photos/calanques.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-    height: 460px;
-}
-#section2photo5{
-    background: url('photos/notredamedelagarde.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-    height: 200px;
-    width: 300px;
-}
-#section2photo6{
-    background: url('photos/parclongchamps.jpg') no-repeat;
-    border-radius: 20px 20px 0 0;
-    height: 200px;
-    width: 300px;
-}
+
+
 footer{
     display: flex;
     flex-direction: row;
@@ -472,7 +435,13 @@ footer li{
   
     #findleft{
         padding: 20px;
+        width: 30px;
     }
+
+    #findcenter{
+        width: 50%;
+    }
+
     #searching{
         display: none;
         border: #0065fc;
@@ -529,9 +498,10 @@ footer li{
         padding: 10px;
         margin-bottom: 10px;
     }
+
     .asideelementdescription{
         font-size: 0.7em;
-        width: 50%;
+        width: 45%;
         padding-left: 10px;
     }
     .asideelementtext1{
@@ -546,16 +516,7 @@ footer li{
         margin-top: 55%;
         padding-left: 5px;
     }
-    #asidephoto1{
-        max-width: 50%;
-    }
-    #asidephoto2{
-        max-width: 50%;
-    }
-    #asidephoto3{
-        max-width: 50%;
-    }
-    
+
     section H2{
         font-size: 1.1em;
         padding-left: 15px;
@@ -579,87 +540,23 @@ footer li{
         padding: 10px;
     }
 
-    #section1photo1{
-        background: url('photos/HOTEL1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo2{
-        background: url('photos/HOTEL2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo3{
-        background: url('photos/HOTEL3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #scetion1photo4{
-        background: url('photos/HOTEL4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo5{
-        background: url('photos/HOTEL5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo6{
-        background: url('photos/HOTEL6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
     #section2{
         display: flex;
         flex-direction: column;
-        width: auto;
-    }
-
-    .section2column{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
-    .section2element{
-        width: auto;
-        padding: 10px;
-    }
-
-    #section2photo1{
-        background: url('photos/ACTI1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    #section2photo2{
-        background: url('photos/ACTI2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
+        margin: auto;
         width: 100%;
     }
 
-    #section2photo3{
-        background: url('photos/ACTI3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
+    .section2photoa{
+        width: 270px;
+        height: 240px;
     }
 
-    #section2photo4{
-        background: url('photos/ACTI4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
+    .section2photob{
+        width: 270px;
+        height: 240px;
     }
 
-    #section2photo5{
-        background: url('photos/ACTI5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-    }
-
-    #section2photo6{
-        background: url('photos/ACTI6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-    }
 
     footer{
         display: flex;
@@ -817,7 +714,7 @@ footer li{
     }
     .asideelementdescription{
         font-size: 0.7em;
-        width: 50%;
+        width: 45%;
         padding-left: 10px;
     }
     .asideelementtext1{
@@ -833,119 +730,55 @@ footer li{
         margin-top: 40%;
         padding-left: 5px;
     }
-    #asidephoto1{
-        max-width: 50%;
-    }
-    #asidephoto2{
-        max-width: 50%;
-    }
-    #asidephoto3{
-        max-width: 50%;
-    }
     
     section H2{
         font-size: 1.1em;
         padding-left: 15px;
     }
+
     #section1{
         background-color: white;
         display: flex;
         flex-direction: column;
         width: 90%;
         padding: 10px;
-    
     }
+
     .undersection{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding-bottom: 0px;
     }
+
     .section1element{
         width: auto;
         padding: 10px;
     }
 
-    #section1photo1{
-        background: url('photos/HOTEL1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo2{
-        background: url('photos/HOTEL2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo3{
-        background: url('photos/HOTEL3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo4{
-        background: url('photos/HOTEL4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo5{
-        background: url('photos/HOTEL5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
-    #section1photo6{
-        background: url('photos/HOTEL6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-    }
-
     #section2{
         display: flex;
         flex-direction: column;
-        width: auto;
+        justify-content: center;
+        width: 100%;
     }
 
-    .section2column{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
     .section2element{
-        width: auto;
-        padding: 10px;
+        width: 340px;
     }
 
-    #section2photo1{
-        background: url('photos/ACTI1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
+    .section2photoa{
+        width: 340px;
+        height: 240px;
     }
 
-    #section2photo2{
-        background: url('photos/ACTI2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
+    .section2element2{
+        width: 340px;
     }
 
-    #section2photo3{
-        background: url('photos/ACTI3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-    }
-
-    #section2photo4{
-        background: url('photos/ACTI4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 200px;
-    }
-
-    #section2photo5{
-        background: url('photos/ACTI5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-    }
-
-    #section2photo6{
-        background: url('photos/ACTI6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
+    .section2photob{
+        width: 340px;
+        height: 240px;
     }
 
     footer{
@@ -1003,14 +836,20 @@ footer li{
     }
     .asideelement{
         width: 70%;
+        height: 200px;
+    }
+
+    .asidephoto{
+        height: 200px;
+
     }
 
     .asideelementdescription{
-        width: 50%;
+        width: 45%;
     }
 
     .stars{
-        margin-top: 10%;
+        margin-top: 30%;
     }
 
     #section1{
@@ -1022,14 +861,19 @@ footer li{
     }
     #section2{
         flex-wrap: wrap;
-        width: 85%;
-        padding-right: 10px;
+        width: 100%;
+        justify-content: none;
     }
     #anchorsection2{
         padding-left: 20px;
     }
     .section2element{
-        width: auto;
+        width: 300px;
+        margin-left: 45px;
+    }
+
+    .section2column{
+        margin-right: 45px;
     }
 
     footer{
@@ -1061,21 +905,10 @@ footer li{
     #asideblock{
         width: 33%;
         float: right;
-        padding-bottom: 30px;
+        padding-bottom: 15px;
     }
 
     .asideelementdescription{
-        width: 50%;
-    }
-    #asidephoto1{
-        width: 45%;
-    }
-
-    #asidephoto2{
-        width: 45%;
-    }
-
-    #asidephoto3{
         width: 45%;
     }
 
@@ -1109,35 +942,24 @@ footer li{
     #section2{
         width: 100%;
         flex-direction: row;
-        justify-content: start;
     }
     #anchorsection2{
         padding-left: 20px;
     }
     .section2element{
-        width: 200px;
-        margin: 15px;
+        width: 180px;
     }
-    #section2photo1{
-        width: 100%;
+
+    .section2element2{
+        width: 180px;
     }
-    #section2photo2{
-        width: 100%;
+
+    .section2column{
+        width: 180px;
     }
-    #section2photo3{
-        width: 100%;
-    }
-    #section2photo4{
-        width: 100%;
-    }
-    #section2photo5{
-        width: 100%;
-    }
-    #section2photo6{
-        width: 100%;
-    }
+
     .section2elementdescription{
-        width: auto;
+        width: 180px;
         font-size: 0.8em;
     }
 
@@ -1243,25 +1065,13 @@ footer li{
     
     .asideelement{
         margin: 20px;
-        height: 250px;
+        height: 200px;
     }
     
-    #asidephoto1{
-        background: url('photos/HOTELPOP1.jpg') no-repeat;
-        border-radius: 20px 0 0 20px;
-        height: 250px;
+    .asidephoto{
+        height: 200px;
     }
         
-    #asidephoto2{
-        background: url('photos/HOTELPOP2.jpg') no-repeat;
-        border-radius: 20px 0 0 20px;
-        height: 250px;
-    }    
-    #asidephoto3{
-        background: url('photos/HOTELPOP3.jpg') no-repeat;
-        border-radius: 20px 0 0 20px;
-        height: 250px;
-    }
     .asideelementdescription{
         width: 40%;
         padding-left: 5px;
@@ -1276,7 +1086,7 @@ footer li{
         padding-left: 5px;
     }
     .stars{
-        margin-top: 20%;
+        margin-top: 5%;
         padding-left: 5px;
     }
 
@@ -1287,6 +1097,11 @@ footer li{
     #section1 H2{
         font-size: 2.5em;
     }
+
+    #section1{
+        width: 65%;
+    }
+
     .undersection{
         display: flex;
         flex-direction: row;
@@ -1294,44 +1109,12 @@ footer li{
         width: 100%;
     }
     .section1element{
-        width: 35%;
-        margin: 25px;
+        width: 30%;
+        margin: 15px;
     }
 
-    #section1photo1{
-        background: url('photos/HOTELMAX1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo2{
-        background: url('photos/HOTELMAX2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo3{
-        background: url('photos/HOTELMAX3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo4{
-        background: url('photos/HOTELMAX4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo5{
-        background: url('photos/HOTELMAX5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo6{
-        background: url('photos/HOTELMAX6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
+    .section1photo{
+        height: 200px;
     }
 
     .section1bottom{
@@ -1346,53 +1129,18 @@ footer li{
         font-size: 2.5em;
         margin-top: 35px;
     }
+
     #section2{
-        width: 95%;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .section2element{
-        margin: 15px;
+        width: 390px;
     }
 
-    #section2photo1{
-        background: url('photos/ACTIMAX1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 650px;
-        width: 400px;
-    }
-
-    #section2photo2{
-        background: url('photos/ACTIMAX2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 400px;
-    }
-
-    #section2photo3{
-        background: url('photos/ACTIMAX3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 400px;
-    }
-
-    #section2photo4{
-        background: url('photos/ACTIMAX4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 650px;
-        width: 400px;
-    }
-    #section2photo5{
-        background: url('photos/ACTIMAX5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 400px;
-    }
-
-    #section2photo6{
-        background: url('photos/ACTIMAX6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 400px;
+    .section2element2{
+        width: 390px;
     }
 
     #section2elementdescription{
@@ -1496,27 +1244,15 @@ footer li{
 
     .asideelement{
         margin: 25px;
-        height: 250px;
+        height: 220px;
     }
 
-    #asidephoto1{
-        background: url('photos/HOTELPOP1.jpg') no-repeat;
-        border-radius: 20px 0 0 20px;
-        height: 250px;
+    .asidephoto{
+        height: 220px;
     }
     
-    #asidephoto2{
-        background: url('photos/HOTELPOP2.jpg') no-repeat;
-        border-radius: 20px 0 0 20px;
-        height: 250px;
-    }
-    #asidephoto3{
-        background: url('photos/HOTELPOP3.jpg') no-repeat;
-        border-radius: 20px 0 0 20px;
-        height: 250px;
-    }
     .asideelementdescription{
-        width: 50%;
+        width: 45%;
         padding-left: 10px;
     }
     .asideelementtext1{
@@ -1530,7 +1266,7 @@ footer li{
         padding-left: 5px;
     }
     .stars{
-        margin-top: 20%;
+        margin-top: 15%;
         padding-left: 5px;
     }
 
@@ -1541,6 +1277,10 @@ footer li{
     #section1 H2{
         font-size: 2.5em;
     }
+
+    #section1{
+        width: 65%;
+    }
     .undersection{
         display: flex;
         flex-direction: row;
@@ -1548,43 +1288,11 @@ footer li{
         width: 100%;
     }
     .section1element{
-        width: 35%;
-        margin: 35px;
+        width: 30%;
+        margin: 15px;
     }
 
-    #section1photo1{
-        background: url('photos/HOTELMAX1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo2{
-        background: url('photos/HOTELMAX2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo3{
-        background: url('photos/HOTELMAX3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo4{
-        background: url('photos/HOTELMAX4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo5{
-        background: url('photos/HOTELMAX5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 250px;
-    }
-
-    #section1photo6{
-        background: url('photos/HOTELMAX6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
+    .section1photo{
         height: 250px;
     }
 
@@ -1598,53 +1306,28 @@ footer li{
     #anchorsection2{
         margin-left: 8%;
         font-size: 2.5em;
-        margin-top: 35px;
+        margin-top: 55px;
     }
+  
     #section2{
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 100%;
+        justify-content: center;
+        margin-top: 25px;
     }
 
-    #section2photo1{
-        background: url('photos/ACTIMAX1.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 650px;
-        width: 450px;
+    .section2element{
+        width: 500px;
+        margin: 0 45px 0 45px;
     }
 
-    #section2photo2{
-        background: url('photos/ACTIMAX2.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 450px;
+    .section2column{
+        width: 500px;
+        margin: 0 45px 0 45px;
     }
 
-    #section2photo3{
-        background: url('photos/ACTIMAX3.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 450px;
-    }
+    .section2element2{
+        width: 500px;
 
-    #section2photo4{
-        background: url('photos/ACTIMAX4.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 650px;
-        width: 450px;
-    }
-    #section2photo5{
-        background: url('photos/ACTIMAX5.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 450px;
-    }
-
-    #section2photo6{
-        background: url('photos/ACTIMAX6.jpg') no-repeat;
-        border-radius: 20px 20px 0 0;
-        height: 300px;
-        width: 450px;
     }
 
     #section2elementdescription{
