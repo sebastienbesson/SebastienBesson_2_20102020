@@ -191,7 +191,7 @@ section{
     height: 100%;
 }
 
-.asidephoto{
+.asidephoto img{
     float: left;
     height: 150px;
     width: 50%;
@@ -244,7 +244,7 @@ section{
     padding: 5px;
     width: 30%;
 }
-.section1photo{
+.section1photo img{
     height: 150px;
     width: auto;
     border-radius: 20px 20px 0 0;
@@ -312,14 +312,16 @@ section{
     overflow: hidden;
 }
 
-.section2photoa{
+.section2photoa img{
     border-radius: 20px 20px 0 0;
+    width: 280px;
     height: 470px;
     overflow: hidden;
 }
 
-.section2photob{
+.section2photob img{
     border-radius: 20px 20px 0 0;
+    width: 280px;
     height: 200px;
     overflow: hidden;
 }
@@ -547,16 +549,15 @@ footer li{
         width: 100%;
     }
 
-    .section2photoa{
+    .section2element img{
         width: 270px;
-        height: 240px;
+        height: 230px;
     }
 
-    .section2photob{
+    .section2column img{
         width: 270px;
-        height: 240px;
+        height: 230px;
     }
-
 
     footer{
         display: flex;
@@ -740,8 +741,7 @@ footer li{
         background-color: white;
         display: flex;
         flex-direction: column;
-        width: 90%;
-        padding: 10px;
+        width: 100%;
     }
 
     .undersection{
@@ -752,33 +752,44 @@ footer li{
     }
 
     .section1element{
-        width: auto;
-        padding: 10px;
+        width: 330px;
+    }
+
+    .section1photo img{
+        width: 330px;
+        height: 150px;
     }
 
     #section2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 340px;
     }
 
     .section2element{
-        width: 340px;
+        width: 330px;
     }
 
-    .section2photoa{
-        width: 340px;
-        height: 240px;
+    .section2photoa img{
+        width: 330px;
+    }
+
+    .section2elementdescription{
+        width: 330px;
+        height: 50px;
+    }
+
+    .section2column{
+        width: 330px;
     }
 
     .section2element2{
-        width: 340px;
+        width: 330px;
     }
 
-    .section2photob{
-        width: 340px;
-        height: 240px;
+    .section2photob img{
+        width: 330px;
     }
 
     footer{
@@ -817,7 +828,7 @@ footer li{
     #filters{
         font-size: 0.9em;
         justify-content: space-between;
-        width: 95%;
+        width: 100%;
     }
 
     .filterborder{
@@ -839,9 +850,8 @@ footer li{
         height: 200px;
     }
 
-    .asidephoto{
+    .asidephoto img{
         height: 200px;
-
     }
 
     .asideelementdescription{
@@ -859,6 +869,11 @@ footer li{
     #anchorsection1{
         padding-left: 10px;
     }
+
+    .section1photo img{
+        width: 205px;
+    }
+
     #section2{
         flex-wrap: wrap;
         width: 100%;
@@ -895,7 +910,7 @@ footer li{
 @media all and (min-width: 1024px) and (max-width: 1024px)
 {
     body{
-        width: 95%;
+        width: 100%;
         margin: 5px;
     }
     #filters{
@@ -934,32 +949,46 @@ footer li{
 
     .undersection{
         padding-bottom: 20px;
-        
     }
+
+    .section1photo img{
+        width: 165px;
+    }
+
     .section1elementtext1{
         font-size: 0.9em;
     }
     #section2{
-        width: 100%;
+        width: 95%;
         flex-direction: row;
     }
     #anchorsection2{
         padding-left: 20px;
     }
     .section2element{
-        width: 180px;
+        width: 200px;
+    }
+
+    .section2photoa img{
+        width: 200px;
+        height: 300px;
     }
 
     .section2element2{
-        width: 180px;
+        width: 200px;
+    }
+
+    .section2photob img{
+        width: 200px;
+        height: 110px;
     }
 
     .section2column{
-        width: 180px;
+        width: 200px;
     }
 
     .section2elementdescription{
-        width: 180px;
+        width: 200px;
         font-size: 0.8em;
     }
 
@@ -1068,7 +1097,7 @@ footer li{
         height: 200px;
     }
     
-    .asidephoto{
+    .asidephoto img{
         height: 200px;
     }
         
@@ -1110,11 +1139,17 @@ footer li{
     }
     .section1element{
         width: 30%;
+        height: 265px;
         margin: 15px;
     }
 
-    .section1photo{
-        height: 200px;
+    .section1photo img{
+        width: 100%;
+        height: 190px;
+    }
+
+    .section2elementdescription{
+        height: 50px;
     }
 
     .section1bottom{
@@ -1139,8 +1174,18 @@ footer li{
         width: 390px;
     }
 
+    .section2photoa img{
+        width: 390px;
+        height: 580px;
+    }
+
     .section2element2{
         width: 390px;
+    }
+
+    .section2photob img{
+        width: 390px;
+        height: 250px;
     }
 
     #section2elementdescription{
@@ -1247,7 +1292,7 @@ footer li{
         height: 220px;
     }
 
-    .asidephoto{
+    .asidephoto img{
         height: 220px;
     }
     
@@ -1292,7 +1337,8 @@ footer li{
         margin: 15px;
     }
 
-    .section1photo{
+    .section1photo img{
+        width: 470px;
         height: 250px;
     }
 
@@ -1318,6 +1364,12 @@ footer li{
     .section2element{
         width: 500px;
         margin: 0 45px 0 45px;
+        padding: 10px;
+    }
+
+    .section2photoa img{
+        width: 500px;
+        height: 770px;
     }
 
     .section2column{
@@ -1327,7 +1379,12 @@ footer li{
 
     .section2element2{
         width: 500px;
+        padding: 10px;
+    }
 
+    .section2photob img{
+        width: 500px;
+        height: 350px;
     }
 
     #section2elementdescription{
